@@ -75,12 +75,11 @@ def cluster():
             cluster_data = cluster_patients_by_hospital(hospital)
             if not cluster_data.empty:
                 predicted_cluster = cluster_data['Cluster'].iloc[-1]  # Get the cluster of the newly added patient
-                cluster_members = cluster_data[cluster_data['Cluster'] == predicted_cluster]
 
                 print(f"Predicted cluster: {predicted_cluster}")
-                print(f"Cluster data (first 5): {cluster_members.head()}")
+                print(f"Cluster data (first 5): {cluster_data.head()}")
 
-                return render_template('results.html', cluster_data=cluster_members.to_dict(orient='records'), cluster=predicted_cluster)
+                return render_template('results.html', cluster_data=cluster_data.to_dict(orient='records'), cluster=predicted_cluster)
             else:
                 return render_template('results.html', message="Not enough data to form clusters.")
         else:
@@ -121,7 +120,7 @@ def cluster_patients_by_hospital(hospital_name):
 
     # Perform clustering if enough data is available
     if len(hospital_patients) >= 50:  # Ensure there are enough patients
-        kproto = KPrototypes(n_clusters=8, init='Cao', n_init=10, random_state=0)
+        kproto = KPrototypes(n_clusters=5, init='Cao', n_init=10, random_state=0)
         
         clusters = kproto.fit_predict(hospital_patients_combined, categorical=list(range(len(numerical_cols), len(numerical_cols) + len(categorical_cols))))
         print("After Clustering -- ")

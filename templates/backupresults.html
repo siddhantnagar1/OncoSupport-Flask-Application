@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cluster Assignment Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&display=swap" rel="stylesheet">
+    <style>
+        /* Rest of your styles */
+        body {
+            font-family: "Petrona", Arial, sans-serif; /* Set the font-family */
+            background-color: #FFFCFB;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-family: "Petrona", Arial, sans-serif; /* Set the font-family */
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .meet-link {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .meet-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>All Patients</h1>
+        <p>List of all registered patients:</p>
+
+        <!-- Check if there is patient data to display -->
+        {% if patients %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Age</th>
+                        <th>Diagnosis</th>
+                        <!-- Add other headers if needed -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for patient in patients %}
+                    <tr>
+                        <td>{{ patient['Full Name'] }}</td>
+                        <td>{{ patient['Age'] }}</td>
+                        <td>{{ patient['Diagnosis'] }}</td>
+                        <!-- Display other attributes if needed -->
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No patient data available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,220 @@
+Full Name,Gender,Age,Ethnicity,Diagnosis by Location,Cancer Diagnosis,Cancer Stage,Time with Cancer (months),Primary Speaking Language,Parenting Situation,Personal Concern,Hospital,Phone Number,Email
+Linda I.,Male,56,White,Breast,Male Breast Cancer,3,26,English,No Children,Financial,UC Health,5130195259.0,example@gmail.com
+Charles V.,Male,55,Asian,Digestive/Gastrointestinal,Anal Cancer,3,49,English,No Children,Financial,Massachusetts General Hospital,5138427432.0,example@gmail.com
+Karen Q.,Female,35,Asian,Eye,Retunoblastoma,3,28,English,No Children,Financial,Cleveland Clinic,5134349531.0,example@gmail.com
+Patricia F.,Male,41,White,Germ cell,Testicular Cancer,1,26,English,Have Children,Financial,UC Health,5130918097.0,example@gmail.com
+Barbara J.,Male,63,White,Head and Neck,Laryngeal Cancer,0,17,English,Have Children,Emotional,Massachusetts General Hospital,5137532829.0,example@gmail.com
+Michael N.,Male,72,White,Skin,Melanoma,3,15,English,Have Children,Emotional,Cleveland Clinic,5134271589.0,example@gmail.com
+Sarah X.,Male,40,Hispanic and Latino Americans,Skin,Melanoma,2,38,Spanish,Have Children,Emotional,UC Health,5136039046.0,example@gmail.com
+James S.,Female,71,African American,Neurologic,Neuroblastoma,0,34,Spanish,Planning on having children,Financial,Massachusetts General Hospital,5138217196.0,example@gmail.com
+Richard P.,Male,53,American Indian or Alaska Native,Breast,Male Breast Cancer,3,35,Spanish,Planning on having children,Financial,Cleveland Clinic,5135342986.0,example@gmail.com
+Michael M.,Female,61,Asian,Breast,Breast Cancer,1,49,French,Planning on having children,Financial,UC Health,5136279752.0,example@gmail.com
+Elizabeth J.,Female,60,African American,Breast,Breast Cancer,1,33,French,Have Children,Financial,Massachusetts General Hospital,5133403301.0,example@gmail.com
+Mary A.,Female,80,African American,Breast,Breast Cancer,1,15,English,Have Children,Financial,Cleveland Clinic,5132464102.0,example@gmail.com
+David Y.,Male,44,Asian,Hematologic/Blood,Leukemia,4,59,English,Have Children,Financial,UC Health,5138031223.0,example@gmail.com
+Patricia Q.,Male,37,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,28,English,Have Children,Financial,Massachusetts General Hospital,5137332131.0,example@gmail.com
+John D.,Male,75,White,Hematologic/Blood,Non-Hodgkins Lymphoma,2,44,English,No Children,Lack of Knowledge,Cleveland Clinic,5133983428.0,example@gmail.com
+Linda M.,Female,45,White,Hematologic/Blood,Non-Hodgkins Lymphoma,2,27,English,No Children,Lack of Knowledge,UC Health,5137206204.0,example@gmail.com
+Jennifer O.,Female,56,White,Hematologic/Blood,Leukemia,4,58,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5131100759.0,example@gmail.com
+Thomas W.,Female,58,White,Hematologic/Blood,Myelodysplastic Syndromes,2,2,English,Have Children,Financial,Cleveland Clinic,5136475922.0,example@gmail.com
+John D.,Male,62,White,Hematologic/Blood,Myelodysplastic Syndromes,3,9,English,Have Children,Financial,UC Health,5138022963.0,example@gmail.com
+James V.,Female,70,White,Hematologic/Blood,Myelodysplastic Syndromes,1,58,English,Have Children,Financial,Massachusetts General Hospital,5132797979.0,example@gmail.com
+Elizabeth G.,Male,60,Asian,Neurologic,"Brain Tumor, Adult",0,53,English,Have Children,Financial,Cleveland Clinic,5131767768.0,example@gmail.com
+Charles K.,Male,49,Asian,Neurologic,"Brain Tumor, Adult",0,34,English,Planning on having children,Financial,UC Health,5139037854.0,example@gmail.com
+John M.,Male,30,White,Eye,Retunoblastoma,0,33,English,Planning on having children,Lack of Knowledge,Massachusetts General Hospital,5139406186.0,example@gmail.com
+David X.,Male,56,White,Skin,Cutaneous T-Cell Lymphoma,0,27,English,Planning on having children,Lack of Knowledge,Cleveland Clinic,5130389106.0,example@gmail.com
+William H.,Female,43,White,Skin,Cutaneous T-Cell Lymphoma,1,27,English,Have Children,Lack of Knowledge,UC Health,5135403753.0,example@gmail.com
+David Y.,Female,55,Hispanic and Latino Americans,Skin,Skin Cancer,2,55,English,Have Children,Emotional,Massachusetts General Hospital,5135810903.0,example@gmail.com
+William I.,Female,69,African American,Skin,Skin Cancer,0,10,English,Have Children,Emotional,Cleveland Clinic,5133493124.0,example@gmail.com
+James T.,Female,60,American Indian or Alaska Native,Head and Neck,Laryngeal Cancer,2,14,English,Have Children,Emotional,UC Health,5135209779.0,example@gmail.com
+Elizabeth G.,Female,45,Asian,Breast,Male Breast Cancer,0,60,English,No Children,Financial,Massachusetts General Hospital,5132012277.0,example@gmail.com
+John P.,Male,53,African American,Digestive/Gastrointestinal,Anal Cancer,4,2,English,No Children,Financial,Cleveland Clinic,5136287847.0,example@gmail.com
+James R.,Male,55,African American,Eye,Retunoblastoma,0,40,English,No Children,Financial,UC Health,5136880612.0,example@gmail.com
+James O.,Male,51,Asian,Germ cell,Testicular Cancer,1,26,English,Have Children,Financial,Massachusetts General Hospital,5139285131.0,example@gmail.com
+Robert Z.,Female,77,White,Head and Neck,Laryngeal Cancer,0,27,English,Have Children,Emotional,Cleveland Clinic,5132403949.0,example@gmail.com
+Robert C.,Female,49,White,Skin,Melanoma,1,13,Spanish,Have Children,Emotional,UC Health,5139040310.0,example@gmail.com
+Jennifer I.,Female,32,White,Skin,Melanoma,3,1,Spanish,Have Children,Emotional,Massachusetts General Hospital,5135096436.0,example@gmail.com
+Robert H.,Male,72,White,Neurologic,Neuroblastoma,4,37,Spanish,Planning on having children,Financial,Cleveland Clinic,5134554177.0,example@gmail.com
+Richard F.,Female,60,White,Breast,Male Breast Cancer,4,60,French,Planning on having children,Financial,UC Health,5133886750.0,example@gmail.com
+James J.,Male,47,White,Breast,Breast Cancer,4,20,French,Planning on having children,Financial,Massachusetts General Hospital,5130246954.0,example@gmail.com
+Susan O.,Male,59,White,Breast,Breast Cancer,2,3,English,Have Children,Financial,Cleveland Clinic,5131967630.0,example@gmail.com
+Susan P.,Male,35,Asian,Breast,Breast Cancer,0,32,English,Have Children,Financial,UC Health,5134488649.0,example@gmail.com
+Richard P.,Male,59,Asian,Hematologic/Blood,Leukemia,2,45,English,Have Children,Financial,Massachusetts General Hospital,5136102688.0,example@gmail.com
+Jennifer H.,Female,46,White,Hematologic/Blood,Non-Hodgkins Lymphoma,3,29,English,Have Children,Financial,Cleveland Clinic,5138036669.0,example@gmail.com
+Karen E.,Female,32,White,Hematologic/Blood,Non-Hodgkins Lymphoma,0,28,English,No Children,Lack of Knowledge,UC Health,5132701583.0,example@gmail.com
+Sarah M.,Female,54,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,55,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5138413048.0,example@gmail.com
+Barbara K.,Female,42,Hispanic and Latino Americans,Hematologic/Blood,Leukemia,0,50,English,No Children,Lack of Knowledge,Cleveland Clinic,5138718551.0,example@gmail.com
+Richard Y.,Female,55,African American,Hematologic/Blood,Myelodysplastic Syndromes,4,57,English,Have Children,Financial,UC Health,5135889608.0,example@gmail.com
+Richard U.,Male,69,American Indian or Alaska Native,Hematologic/Blood,Myelodysplastic Syndromes,1,43,English,Have Children,Financial,Massachusetts General Hospital,5134904203.0,example@gmail.com
+James J.,Male,51,Asian,Hematologic/Blood,Myelodysplastic Syndromes,2,58,English,Have Children,Financial,Cleveland Clinic,5136084961.0,example@gmail.com
+Elizabeth G.,Male,71,African American,Neurologic,"Brain Tumor, Adult",4,13,English,Have Children,Financial,UC Health,5131990736.0,example@gmail.com
+Richard A.,Female,80,African American,Neurologic,"Brain Tumor, Adult",2,21,English,Planning on having children,Financial,Massachusetts General Hospital,5133650893.0,example@gmail.com
+Patricia B.,Female,55,Asian,Eye,Retunoblastoma,1,27,English,Planning on having children,Lack of Knowledge,Cleveland Clinic,5136355573.0,example@gmail.com
+Jessica V.,Female,67,White,Skin,Cutaneous T-Cell Lymphoma,3,40,English,Planning on having children,Lack of Knowledge,UC Health,5132308566.0,example@gmail.com
+Jennifer Z.,Male,39,White,Skin,Cutaneous T-Cell Lymphoma,2,12,English,Have Children,Lack of Knowledge,Massachusetts General Hospital,5138890337.0,example@gmail.com
+Patricia D.,Female,48,White,Skin,Skin Cancer,2,50,English,Have Children,Emotional,Cleveland Clinic,5136683810.0,example@gmail.com
+William M.,Male,64,White,Skin,Skin Cancer,1,24,English,Have Children,Emotional,UC Health,5138533037.0,example@gmail.com
+Sarah U.,Male,42,White,Head and Neck,Laryngeal Cancer,4,51,English,Have Children,Emotional,Massachusetts General Hospital,5136414259.0,example@gmail.com
+James H.,Male,42,White,Breast,Male Breast Cancer,4,40,English,No Children,Financial,Cleveland Clinic,5130047147.0,example@gmail.com
+Charles L.,Male,53,White,Digestive/Gastrointestinal,Anal Cancer,1,12,English,No Children,Financial,UC Health,5135348078.0,example@gmail.com
+John Z.,Female,48,Asian,Eye,Retunoblastoma,0,11,English,No Children,Financial,Massachusetts General Hospital,5138372823.0,example@gmail.com
+David G.,Female,78,Asian,Germ cell,Testicular Cancer,2,42,English,Have Children,Financial,Cleveland Clinic,5134452509.0,example@gmail.com
+William L.,Female,38,White,Head and Neck,Laryngeal Cancer,4,39,Spanish,Have Children,Emotional,UC Health,5136609387.0,example@gmail.com
+Linda A.,Female,69,White,Skin,Melanoma,1,4,Spanish,Have Children,Emotional,Massachusetts General Hospital,5133268877.0,example@gmail.com
+John U.,Female,36,White,Skin,Melanoma,3,57,Spanish,Have Children,Emotional,Cleveland Clinic,5135046774.0,example@gmail.com
+Barbara F.,Male,62,Hispanic and Latino Americans,Neurologic,Neuroblastoma,3,19,French,Planning on having children,Financial,UC Health,5136380473.0,example@gmail.com
+Karen F.,Male,47,African American,Breast,Male Breast Cancer,3,50,French,Planning on having children,Financial,Massachusetts General Hospital,5138520785.0,example@gmail.com
+Thomas P.,Male,32,American Indian or Alaska Native,Breast,Breast Cancer,0,59,English,Planning on having children,Financial,Cleveland Clinic,5137656670.0,example@gmail.com
+Susan S.,Female,64,Asian,Breast,Breast Cancer,2,53,English,Have Children,Financial,UC Health,5131249222.0,example@gmail.com
+Mary E.,Male,34,African American,Breast,Breast Cancer,1,7,English,Have Children,Financial,Massachusetts General Hospital,5132252721.0,example@gmail.com
+Joseph Q.,Male,58,African American,Hematologic/Blood,Leukemia,3,42,English,Have Children,Financial,Cleveland Clinic,5138220695.0,example@gmail.com
+Richard P.,Male,39,Asian,Hematologic/Blood,Non-Hodgkins Lymphoma,1,18,English,Have Children,Financial,UC Health,5135457046.0,example@gmail.com
+Sarah V.,Male,65,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,6,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5132604189.0,example@gmail.com
+Thomas J.,Female,50,White,Hematologic/Blood,Non-Hodgkins Lymphoma,4,37,English,No Children,Lack of Knowledge,Cleveland Clinic,5137034732.0,example@gmail.com
+Thomas C.,Female,33,White,Hematologic/Blood,Leukemia,0,45,English,No Children,Lack of Knowledge,UC Health,5137510471.0,example@gmail.com
+Sarah T.,Female,64,White,Hematologic/Blood,Myelodysplastic Syndromes,3,18,English,Have Children,Financial,Massachusetts General Hospital,5137745296.0,example@gmail.com
+Elizabeth K.,Female,72,White,Hematologic/Blood,Myelodysplastic Syndromes,0,16,English,Have Children,Financial,Cleveland Clinic,5136388201.0,example@gmail.com
+Thomas A.,Female,51,White,Hematologic/Blood,Myelodysplastic Syndromes,4,27,English,Have Children,Financial,UC Health,5137293048.0,example@gmail.com
+Patricia A.,Male,70,Asian,Neurologic,"Brain Tumor, Adult",3,42,English,Have Children,Financial,Massachusetts General Hospital,5137859374.0,example@gmail.com
+David T.,Male,73,Asian,Neurologic,"Brain Tumor, Adult",4,6,English,Planning on having children,Financial,Cleveland Clinic,5135564781.0,example@gmail.com
+James C.,Male,60,White,Eye,Retunoblastoma,1,44,English,Planning on having children,Lack of Knowledge,UC Health,5133033213.0,example@gmail.com
+Elizabeth A.,Female,76,White,Skin,Cutaneous T-Cell Lymphoma,2,11,English,Planning on having children,Lack of Knowledge,Massachusetts General Hospital,5133520871.0,example@gmail.com
+Richard T.,Female,43,White,Skin,Cutaneous T-Cell Lymphoma,2,50,English,Have Children,Lack of Knowledge,Cleveland Clinic,5138215224.0,example@gmail.com
+Elizabeth F.,Female,57,Hispanic and Latino Americans,Skin,Skin Cancer,4,42,English,Have Children,Emotional,UC Health,5138937598.0,example@gmail.com
+Robert K.,Male,57,African American,Skin,Skin Cancer,4,27,English,Have Children,Emotional,Massachusetts General Hospital,5138022053.0,example@gmail.com
+John S.,Female,63,American Indian or Alaska Native,Head and Neck,Laryngeal Cancer,0,19,English,Have Children,Emotional,Cleveland Clinic,5138631453.0,example@gmail.com
+Patricia A.,Male,54,Asian,Breast,Male Breast Cancer,4,21,English,No Children,Financial,UC Health,5131150836.0,example@gmail.com
+William Z.,Male,32,African American,Digestive/Gastrointestinal,Anal Cancer,0,26,English,No Children,Financial,Massachusetts General Hospital,5138596591.0,example@gmail.com
+Charles T.,Male,47,African American,Eye,Retunoblastoma,1,47,English,No Children,Financial,Cleveland Clinic,5130476890.0,example@gmail.com
+Linda C.,Male,58,Asian,Germ cell,Testicular Cancer,4,11,Spanish,Have Children,Financial,UC Health,5135495771.0,example@gmail.com
+Charles R.,Female,43,White,Head and Neck,Laryngeal Cancer,2,33,Spanish,Have Children,Emotional,Massachusetts General Hospital,5139503960.0,example@gmail.com
+Robert T.,Female,54,White,Skin,Melanoma,4,3,Spanish,Have Children,Emotional,Cleveland Clinic,5130384147.0,example@gmail.com
+James S.,Female,50,White,Skin,Melanoma,2,6,French,Have Children,Emotional,UC Health,5134851180.0,example@gmail.com
+Linda B.,Female,67,White,Neurologic,Neuroblastoma,0,54,French,Planning on having children,Financial,Massachusetts General Hospital,5137372949.0,example@gmail.com
+Barbara T.,Female,75,White,Breast,Male Breast Cancer,0,51,English,Planning on having children,Financial,Cleveland Clinic,5136146364.0,example@gmail.com
+Richard Y.,Male,49,White,Breast,Breast Cancer,3,52,English,Planning on having children,Financial,UC Health,5134763631.0,example@gmail.com
+Charles L.,Male,60,White,Breast,Breast Cancer,2,6,English,Have Children,Financial,Massachusetts General Hospital,5133333662.0,example@gmail.com
+Karen L.,Male,72,Asian,Breast,Breast Cancer,2,18,English,Have Children,Financial,Cleveland Clinic,5132227846.0,example@gmail.com
+Robert I.,Female,72,Asian,Hematologic/Blood,Leukemia,3,20,English,Have Children,Financial,UC Health,5133367020.0,example@gmail.com
+Linda O.,Female,41,White,Hematologic/Blood,Non-Hodgkins Lymphoma,3,46,English,Have Children,Financial,Massachusetts General Hospital,5130374610.0,example@gmail.com
+John F.,Female,80,White,Hematologic/Blood,Non-Hodgkins Lymphoma,0,6,English,No Children,Lack of Knowledge,Cleveland Clinic,5138476315.0,example@gmail.com
+Charles O.,Male,36,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,12,English,No Children,Lack of Knowledge,UC Health,5133931755.0,example@gmail.com
+Thomas P.,Female,77,Hispanic and Latino Americans,Hematologic/Blood,Leukemia,0,15,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5137057807.0,example@gmail.com
+Linda T.,Male,30,African American,Hematologic/Blood,Myelodysplastic Syndromes,2,20,English,Have Children,Financial,Cleveland Clinic,5139814086.0,example@gmail.com
+Robert N.,Male,59,American Indian or Alaska Native,Hematologic/Blood,Myelodysplastic Syndromes,4,13,English,Have Children,Financial,UC Health,5137679839.0,example@gmail.com
+Jessica J.,Male,40,Asian,Hematologic/Blood,Myelodysplastic Syndromes,0,8,English,Have Children,Financial,Massachusetts General Hospital,5137714913.0,example@gmail.com
+Patricia Y.,Male,68,African American,Neurologic,"Brain Tumor, Adult",4,18,English,Have Children,Financial,Cleveland Clinic,5136390696.0,example@gmail.com
+Michael C.,Female,52,African American,Neurologic,"Brain Tumor, Adult",4,30,English,Planning on having children,Financial,UC Health,5139441559.0,example@gmail.com
+William J.,Female,43,Asian,Eye,Retunoblastoma,0,3,English,Planning on having children,Lack of Knowledge,Massachusetts General Hospital,5134304489.0,example@gmail.com
+Elizabeth Y.,Female,37,White,Skin,Cutaneous T-Cell Lymphoma,2,42,English,Planning on having children,Lack of Knowledge,Cleveland Clinic,5131552673.0,example@gmail.com
+David Q.,Female,80,White,Skin,Cutaneous T-Cell Lymphoma,3,23,English,Have Children,Lack of Knowledge,UC Health,5133499131.0,example@gmail.com
+Susan N.,Female,63,White,Skin,Skin Cancer,1,55,English,Have Children,Emotional,Massachusetts General Hospital,5133981807.0,example@gmail.com
+John R.,Male,73,White,Skin,Skin Cancer,2,3,English,Have Children,Emotional,Cleveland Clinic,5132366401.0,example@gmail.com
+Jennifer K.,Male,61,White,Head and Neck,Laryngeal Cancer,1,9,English,Have Children,Emotional,UC Health,5131423555.0,example@gmail.com
+Robert R.,Male,50,White,Breast,Male Breast Cancer,1,40,English,No Children,Financial,Massachusetts General Hospital,5130408524.0,example@gmail.com
+Robert Q.,Female,78,White,Digestive/Gastrointestinal,Anal Cancer,2,37,English,No Children,Financial,Cleveland Clinic,5135386636.0,example@gmail.com
+Karen Y.,Female,43,Asian,Eye,Retunoblastoma,4,53,Spanish,No Children,Financial,UC Health,5135221997.0,example@gmail.com
+Mary N.,Female,74,Asian,Germ cell,Testicular Cancer,3,43,Spanish,Have Children,Financial,Massachusetts General Hospital,5136818466.0,example@gmail.com
+Susan X.,Male,36,White,Head and Neck,Laryngeal Cancer,2,32,Spanish,Have Children,Emotional,Cleveland Clinic,5138719212.0,example@gmail.com
+Richard U.,Female,72,White,Skin,Melanoma,3,16,French,Have Children,Emotional,UC Health,5139230996.0,example@gmail.com
+Susan Q.,Male,62,White,Skin,Melanoma,3,53,French,Have Children,Emotional,Massachusetts General Hospital,5132971334.0,example@gmail.com
+James P.,Male,79,Hispanic and Latino Americans,Neurologic,Neuroblastoma,3,33,English,Planning on having children,Financial,Cleveland Clinic,5135195004.0,example@gmail.com
+Barbara T.,Male,72,African American,Breast,Male Breast Cancer,0,54,English,Planning on having children,Financial,UC Health,5139907229.0,example@gmail.com
+Sarah M.,Male,55,American Indian or Alaska Native,Breast,Breast Cancer,4,46,English,Planning on having children,Financial,Massachusetts General Hospital,5137068834.0,example@gmail.com
+David V.,Female,50,Asian,Breast,Breast Cancer,4,45,English,Have Children,Financial,Cleveland Clinic,5138128546.0,example@gmail.com
+David M.,Female,74,African American,Breast,Breast Cancer,1,58,English,Have Children,Financial,UC Health,5134394873.0,example@gmail.com
+Richard A.,Female,65,African American,Hematologic/Blood,Leukemia,4,33,English,Have Children,Financial,Massachusetts General Hospital,5131189802.0,example@gmail.com
+Barbara G.,Female,34,Asian,Hematologic/Blood,Non-Hodgkins Lymphoma,1,55,English,Have Children,Financial,Cleveland Clinic,5132002186.0,example@gmail.com
+John F.,Female,66,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,42,English,No Children,Lack of Knowledge,UC Health,5132602288.0,example@gmail.com
+Linda I.,Male,60,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,32,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5135902930.0,example@gmail.com
+Jennifer B.,Male,50,White,Hematologic/Blood,Leukemia,0,3,English,No Children,Lack of Knowledge,Cleveland Clinic,5132867397.0,example@gmail.com
+Susan B.,Male,37,White,Hematologic/Blood,Myelodysplastic Syndromes,4,26,English,Have Children,Financial,UC Health,5132391604.0,example@gmail.com
+Linda O.,Female,74,White,Hematologic/Blood,Myelodysplastic Syndromes,3,20,English,Have Children,Financial,Massachusetts General Hospital,5133055811.0,example@gmail.com
+Charles M.,Female,45,White,Hematologic/Blood,Myelodysplastic Syndromes,1,38,English,Have Children,Financial,Cleveland Clinic,5135642613.0,example@gmail.com
+Richard U.,Female,49,White,Neurologic,"Brain Tumor, Adult",2,37,English,Have Children,Financial,UC Health,5138730938.0,example@gmail.com
+Susan C.,Male,68,Asian,Neurologic,"Brain Tumor, Adult",0,25,English,Planning on having children,Financial,Massachusetts General Hospital,5136940429.0,example@gmail.com
+Mary V.,Female,80,Asian,Eye,Retunoblastoma,1,25,English,Planning on having children,Lack of Knowledge,Cleveland Clinic,5131446302.0,example@gmail.com
+Sarah F.,Male,46,White,Skin,Cutaneous T-Cell Lymphoma,2,14,English,Planning on having children,Lack of Knowledge,UC Health,5138907706.0,example@gmail.com
+Linda I.,Male,30,White,Skin,Cutaneous T-Cell Lymphoma,0,5,English,Have Children,Lack of Knowledge,Massachusetts General Hospital,5133891017.0,example@gmail.com
+Patricia I.,Male,31,White,Skin,Skin Cancer,1,26,English,Have Children,Emotional,Cleveland Clinic,5131826974.0,example@gmail.com
+Michael X.,Male,35,Hispanic and Latino Americans,Breast,Male Breast Cancer,3,23,English,Have Children,Emotional,UC Health,5134484762.0,example@gmail.com
+Linda S.,Female,40,African American,Digestive/Gastrointestinal,Anal Cancer,2,56,English,Have Children,Emotional,Massachusetts General Hospital,5132314640.0,example@gmail.com
+Karen S.,Female,32,American Indian or Alaska Native,Eye,Retunoblastoma,0,21,English,No Children,Financial,Cleveland Clinic,5131070096.0,example@gmail.com
+Charles Q.,Female,37,Asian,Germ cell,Testicular Cancer,2,43,Spanish,No Children,Financial,UC Health,5134708498.0,example@gmail.com
+Elizabeth F.,Female,35,African American,Head and Neck,Laryngeal Cancer,3,1,Spanish,No Children,Financial,Massachusetts General Hospital,5132651443.0,example@gmail.com
+Charles R.,Female,48,African American,Skin,Melanoma,1,53,Spanish,Have Children,Financial,Cleveland Clinic,5130479474.0,example@gmail.com
+Linda R.,Male,38,White,Skin,Melanoma,4,16,French,Have Children,Financial,UC Health,5136751788.0,example@gmail.com
+Joseph N.,Male,60,Asian,Neurologic,Neuroblastoma,0,4,French,Have Children,Emotional,Massachusetts General Hospital,5135855658.0,example@gmail.com
+James I.,Male,37,Asian,Breast,Male Breast Cancer,2,26,English,Have Children,Emotional,Cleveland Clinic,5135353596.0,example@gmail.com
+Robert K.,Female,31,White,Breast,Breast Cancer,4,15,English,Planning on having children,Emotional,UC Health,5131658927.0,example@gmail.com
+Joseph F.,Female,59,White,Breast,Breast Cancer,1,24,English,Planning on having children,Financial,Massachusetts General Hospital,5130498654.0,example@gmail.com
+Thomas Q.,Female,41,White,Breast,Breast Cancer,1,26,English,Planning on having children,Financial,Cleveland Clinic,5130904198.0,example@gmail.com
+David G.,Male,62,Hispanic and Latino Americans,Hematologic/Blood,Leukemia,4,38,English,Have Children,Financial,UC Health,5136543803.0,example@gmail.com
+Joseph W.,Female,50,African American,Hematologic/Blood,Non-Hodgkins Lymphoma,1,59,English,Have Children,Financial,Massachusetts General Hospital,5136839218.0,example@gmail.com
+David L.,Male,47,American Indian or Alaska Native,Hematologic/Blood,Non-Hodgkins Lymphoma,1,53,English,Have Children,Financial,Cleveland Clinic,5138293813.0,example@gmail.com
+Patricia F.,Male,43,Asian,Hematologic/Blood,Non-Hodgkins Lymphoma,3,10,English,Have Children,Financial,UC Health,5137347433.0,example@gmail.com
+David K.,Male,57,African American,Hematologic/Blood,Leukemia,1,10,English,No Children,Financial,Massachusetts General Hospital,5135480605.0,example@gmail.com
+Richard I.,Male,71,African American,Hematologic/Blood,Myelodysplastic Syndromes,2,33,English,No Children,Lack of Knowledge,Cleveland Clinic,5132233826.0,example@gmail.com
+Karen S.,Female,54,Asian,Hematologic/Blood,Myelodysplastic Syndromes,0,41,English,No Children,Lack of Knowledge,UC Health,5136694535.0,example@gmail.com
+Richard L.,Female,52,White,Hematologic/Blood,Myelodysplastic Syndromes,1,37,English,Have Children,Lack of Knowledge,Massachusetts General Hospital,5138534060.0,example@gmail.com
+Barbara I.,Female,34,White,Neurologic,"Brain Tumor, Adult",3,25,English,Have Children,Financial,Cleveland Clinic,5138774636.0,example@gmail.com
+Michael S.,Female,47,White,Neurologic,"Brain Tumor, Adult",2,23,English,Have Children,Financial,UC Health,5139362634.0,example@gmail.com
+Patricia D.,Female,55,White,Eye,Retunoblastoma,4,22,English,Have Children,Financial,Massachusetts General Hospital,5138903927.0,example@gmail.com
+Patricia X.,Male,64,White,Skin,Cutaneous T-Cell Lymphoma,3,25,English,Planning on having children,Financial,Cleveland Clinic,5130434160.0,example@gmail.com
+Patricia F.,Male,77,White,Skin,Cutaneous T-Cell Lymphoma,2,38,English,Planning on having children,Financial,UC Health,5131925305.0,example@gmail.com
+Joseph V.,Male,69,White,Skin,Skin Cancer,1,23,English,Planning on having children,Lack of Knowledge,Massachusetts General Hospital,5136271312.0,example@gmail.com
+Elizabeth K.,Female,48,Asian,Skin,Skin Cancer,0,45,English,Have Children,Lack of Knowledge,Cleveland Clinic,5136220984.0,example@gmail.com
+Joseph Y.,Female,65,Asian,Head and Neck,Laryngeal Cancer,2,49,English,Have Children,Lack of Knowledge,UC Health,5137447567.0,example@gmail.com
+Michael G.,Female,61,White,Breast,Male Breast Cancer,3,20,English,Have Children,Emotional,Massachusetts General Hospital,5132251966.0,example@gmail.com
+Charles N.,Male,71,White,Digestive/Gastrointestinal,Anal Cancer,1,44,English,Have Children,Emotional,Cleveland Clinic,5132968093.0,example@gmail.com
+Patricia F.,Female,76,White,Eye,Retunoblastoma,0,24,Spanish,No Children,Emotional,UC Health,5135212485.0,example@gmail.com
+Barbara K.,Male,61,Hispanic and Latino Americans,Germ cell,Testicular Cancer,2,15,Spanish,No Children,Financial,Massachusetts General Hospital,5133896781.0,example@gmail.com
+William S.,Male,76,African American,Head and Neck,Laryngeal Cancer,3,31,Spanish,No Children,Financial,Cleveland Clinic,5133459878.0,example@gmail.com
+Jennifer K.,Male,44,American Indian or Alaska Native,Skin,Melanoma,3,42,French,Have Children,Financial,UC Health,5134169680.0,example@gmail.com
+Michael H.,Male,43,Asian,Skin,Melanoma,2,17,French,Have Children,Financial,Massachusetts General Hospital,5132789137.0,example@gmail.com
+Susan G.,Female,66,African American,Neurologic,Neuroblastoma,1,32,English,Have Children,Emotional,Cleveland Clinic,5130993234.0,example@gmail.com
+Robert T.,Female,57,African American,Breast,Male Breast Cancer,0,12,English,Have Children,Emotional,UC Health,5131169180.0,example@gmail.com
+Karen D.,Female,50,Asian,Breast,Breast Cancer,4,20,English,Planning on having children,Emotional,Massachusetts General Hospital,5138166496.0,example@gmail.com
+Michael F.,Female,36,White,Breast,Breast Cancer,0,29,English,Planning on having children,Financial,Cleveland Clinic,5136145543.0,example@gmail.com
+David E.,Female,76,White,Breast,Breast Cancer,3,41,English,Planning on having children,Financial,UC Health,5132976927.0,example@gmail.com
+David Z.,Male,61,White,Hematologic/Blood,Leukemia,1,16,English,Have Children,Financial,Massachusetts General Hospital,5139817701.0,example@gmail.com
+Thomas O.,Male,48,White,Hematologic/Blood,Non-Hodgkins Lymphoma,1,32,English,Have Children,Financial,Cleveland Clinic,5133596420.0,example@gmail.com
+Joseph V.,Male,72,White,Hematologic/Blood,Non-Hodgkins Lymphoma,0,26,English,Have Children,Financial,UC Health,5136902060.0,example@gmail.com
+Michael V.,Female,68,White,Hematologic/Blood,Non-Hodgkins Lymphoma,2,26,English,Have Children,Financial,Massachusetts General Hospital,5137199358.0,example@gmail.com
+Karen Z.,Female,32,White,Hematologic/Blood,Leukemia,3,9,English,No Children,Financial,Cleveland Clinic,5132595249.0,example@gmail.com
+Susan Q.,Female,39,Asian,Hematologic/Blood,Myelodysplastic Syndromes,2,18,English,No Children,Lack of Knowledge,UC Health,5133861094.0,example@gmail.com
+James U.,Male,56,Asian,Hematologic/Blood,Myelodysplastic Syndromes,4,29,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5131632505.0,example@gmail.com
+John A.,Female,38,White,Hematologic/Blood,Myelodysplastic Syndromes,3,41,English,Have Children,Lack of Knowledge,Cleveland Clinic,5132195146.0,example@gmail.com
+Charles Z.,Male,32,White,Neurologic,"Brain Tumor, Adult",2,50,English,Have Children,Financial,UC Health,5131201957.0,example@gmail.com
+James F.,Male,49,White,Neurologic,"Brain Tumor, Adult",3,54,English,Have Children,Financial,Massachusetts General Hospital,5130734195.0,example@gmail.com
+Karen B.,Male,58,Hispanic and Latino Americans,Eye,Retunoblastoma,2,59,English,Have Children,Financial,Cleveland Clinic,5138649528.0,example@gmail.com
+Mary A.,Male,40,African American,Skin,Cutaneous T-Cell Lymphoma,1,26,English,Planning on having children,Financial,UC Health,5139643202.0,example@gmail.com
+Robert T.,Female,38,American Indian or Alaska Native,Skin,Cutaneous T-Cell Lymphoma,0,24,English,Planning on having children,Financial,Massachusetts General Hospital,5134046304.0,example@gmail.com
+Elizabeth O.,Female,42,Asian,Skin,Skin Cancer,3,45,English,Planning on having children,Lack of Knowledge,Cleveland Clinic,5134799019.0,example@gmail.com
+Michael U.,Female,30,African American,Skin,Skin Cancer,2,57,English,Have Children,Lack of Knowledge,UC Health,5131331996.0,example@gmail.com
+Susan E.,Female,53,African American,Head and Neck,Laryngeal Cancer,3,12,English,Have Children,Lack of Knowledge,Massachusetts General Hospital,5136336780.0,example@gmail.com
+Charles T.,Female,45,Asian,Breast,Male Breast Cancer,2,20,English,Have Children,Emotional,Cleveland Clinic,5135227780.0,example@gmail.com
+Thomas P.,Male,60,White,Digestive/Gastrointestinal,Anal Cancer,1,3,Spanish,Have Children,Emotional,UC Health,5132419861.0,example@gmail.com
+Richard N.,Male,54,White,Eye,Retunoblastoma,2,1,Spanish,No Children,Emotional,Massachusetts General Hospital,5132765390.0,example@gmail.com
+Karen Q.,Male,60,White,Germ cell,Testicular Cancer,1,27,Spanish,No Children,Financial,Cleveland Clinic,5137867921.0,example@gmail.com
+Mary E.,Female,47,White,Head and Neck,Laryngeal Cancer,4,29,French,No Children,Financial,UC Health,5138318206.0,example@gmail.com
+Barbara B.,Female,48,White,Skin,Melanoma,4,46,French,Have Children,Financial,Massachusetts General Hospital,5132060660.0,example@gmail.com
+Jessica T.,Female,65,White,Skin,Melanoma,4,59,English,Have Children,Financial,Cleveland Clinic,5136363419.0,example@gmail.com
+Linda O.,Male,80,White,Neurologic,Neuroblastoma,3,42,English,Have Children,Emotional,UC Health,5131579684.0,example@gmail.com
+Robert E.,Female,60,Asian,Breast,Male Breast Cancer,0,41,English,Have Children,Emotional,Massachusetts General Hospital,5133981410.0,example@gmail.com
+Joseph E.,Male,80,Asian,Breast,Breast Cancer,4,30,English,Planning on having children,Emotional,Cleveland Clinic,5135191786.0,example@gmail.com
+Robert V.,Male,53,White,Breast,Breast Cancer,3,48,English,Planning on having children,Financial,UC Health,5130156497.0,example@gmail.com
+James Q.,Male,64,White,Breast,Breast Cancer,3,22,English,Planning on having children,Financial,Massachusetts General Hospital,5139336940.0,example@gmail.com
+Robert U.,Male,50,White,Hematologic/Blood,Leukemia,1,59,English,Have Children,Financial,Cleveland Clinic,5139989228.0,example@gmail.com
+Jessica N.,Female,40,Hispanic and Latino Americans,Hematologic/Blood,Non-Hodgkins Lymphoma,2,39,English,Have Children,Financial,UC Health,5138177992.0,example@gmail.com
+Patricia M.,Female,22,African American,Hematologic/Blood,Non-Hodgkins Lymphoma,2,34,English,Have Children,Financial,Massachusetts General Hospital,5138997249.0,example@gmail.com
+Mary F.,Male,39,American Indian or Alaska Native,Hematologic/Blood,Non-Hodgkins Lymphoma,2,17,English,Have Children,Financial,Cleveland Clinic,5139831353.0,example@gmail.com
+Richard V.,Female,78,Asian,Hematologic/Blood,Leukemia,0,34,English,No Children,Financial,UC Health,5136149610.0,example@gmail.com
+Elizabeth B.,Male,35,African American,Hematologic/Blood,Myelodysplastic Syndromes,2,27,English,No Children,Lack of Knowledge,Massachusetts General Hospital,5136561229.0,example@gmail.com
+Barbara S.,Male,44,African American,Hematologic/Blood,Myelodysplastic Syndromes,4,4,English,No Children,Lack of Knowledge,Cleveland Clinic,5132531122.0,example@gmail.com
+John A.,Male,33,Asian,Hematologic/Blood,Myelodysplastic Syndromes,4,59,English,Have Children,Lack of Knowledge,UC Health,5134534701.0,example@gmail.com
+Sarah O.,Male,45,White,Neurologic,"Brain Tumor, Adult",2,11,English,Have Children,Financial,Massachusetts General Hospital,5131413313.0,example@gmail.com
+Charles N.,Male,35,White,Neurologic,"Brain Tumor, Adult",1,57,English,Have Children,Financial,Cleveland Clinic,5136447347.0,example@gmail.com
+William I.,Male,33,White,Eye,Retunoblastoma,4,26,English,Have Children,Financial,UC Health,5130648049.0,example@gmail.com
+William Z.,Male,67,White,Skin,Cutaneous T-Cell Lymphoma,0,33,English,Planning on having children,Financial,Massachusetts General Hospital,5135761158.0,example@gmail.com
+Robert N.,Male,30,White,Skin,Cutaneous T-Cell Lymphoma,3,34,English,Planning on having children,Financial,Cleveland Clinic,5136689999.0,example@gmail.com

@@ -3,33 +3,37 @@ import pandas as pd
 from flask import Flask, render_template, request
 from kmodes.kprototypes import KPrototypes
 import joblib
-
 app = Flask(__name__)
-
+# Assuming the configuration for SQL and CSV path is correct
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://stbimxrfwilvqi:df442b27bc746243558eb6d7ca85a026e1d348db6e0abdc7aa14f663142344bb@ec2-34-236-103-63.compute-1.amazonaws.com:5432/d8vj75oq6sunk6'
 # Load the initial patient data
+
 patients = pd.read_csv('oncosupport_dataset.csv')
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
+
 @app.route('/cluster_links')
 def cluster_links():
     return render_template('links.html')
 
+
+def get_predicted_cluster(cluster_details):
+    # Assuming cluster_details is a list of lists (each sublist is a cluster with patient records)
+    # Determine the largest cluster
+    if not cluster_details:
+        return None
+    largest_cluster = max(cluster_details, key=len)
+    predicted_cluster_index = cluster_details.index(largest_cluster)  # get the index of the largest cluster
+    return predicted_cluster_index
+
 @app.route('/all-patients')
 def all_patients():
+    # Assuming 'patients' is a list of dictionaries, each containing patient data
     patients = pd.read_csv('oncosupport_dataset.csv')
-    patients_list = patients.to_dict(orient='records')
-    
-    # Debug print statements
-    print("Data read from CSV:")
-    print(patients.head())  # Print the first few rows of the DataFrame to check the data
-    print("Data being passed to the template:")
-    print(patients_list[:5])  # Print the first few entries of the list of dictionaries
-    
-    return render_template('results.html', patients=patients_list)
-
+    return render_template('results.html', patients=patients)
 @app.route('/cluster', methods=['POST'])
 def cluster():
     try:
@@ -66,33 +70,35 @@ def cluster():
             'Phone Number': phone_number, 
             'Email': email
         }
-
         global patients
+        print ("Initial State:")
+        print(f"Number of patients: {len(patients)}")
         patients = pd.concat([patients, pd.DataFrame([new_entry])], ignore_index=True)
-
+        print ("One")
+        cluster_details = cluster_patients_by_hospital(hospital)
+        print("Cluster Data to be sent:", cluster_details)
+        
         # Perform clustering by hospital
         if hospital:
-            cluster_data = cluster_patients_by_hospital(hospital)
-            if not cluster_data.empty:
-                predicted_cluster = cluster_data['Cluster'].iloc[-1]  # Get the cluster of the newly added patient
-                cluster_members = cluster_data[cluster_data['Cluster'] == predicted_cluster]
-
-                print(f"Predicted cluster: {predicted_cluster}")
-                print(f"Cluster data (first 5): {cluster_members.head()}")
-
-                return render_template('results.html', cluster_data=cluster_members.to_dict(orient='records'), cluster=predicted_cluster)
+            cluster_details = cluster_patients_by_hospital(hospital)
+            if cluster_details and len(cluster_details) > 0:
+                predicted_cluster = get_predicted_cluster(cluster_details)
+                return render_template('results.html', cluster_data=cluster_details, cluster=predicted_cluster)
             else:
                 return render_template('results.html', message="Not enough data to form clusters.")
         else:
             return render_template('results.html', message="No hospital specified.")
     except Exception as e:
-        return render_template('error.html', error=str(e))
+        return render_template('error.html', error=str(e))  # Consider creating an error.html template for better error handling
+
+print ("Two")
 
 def cluster_patients_by_hospital(hospital_name):
     # Filter patients for a specific hospital
     hospital_patients = patients[patients['Hospital'] == hospital_name]
     print("Data before clustering:", hospital_patients)
     print(f"Number of patients in {hospital_name}: {len(hospital_patients)}")
+    print ("Three")
 
     # Columns for clustering
     categorical_cols = ['Gender', 
@@ -106,23 +112,19 @@ def cluster_patients_by_hospital(hospital_name):
                       'Cancer Stage', 
                       'Time with Cancer (months)']
     
+    print ("Four")
+
     # Preparing data for clustering
     hospital_patients_numerical = hospital_patients[numerical_cols].values
     hospital_patients_categorical = hospital_patients[categorical_cols].values
     hospital_patients_combined = np.hstack((hospital_patients_numerical, hospital_patients_categorical))
-
-    # Debug statements to check data
-    print("Hospital patients numerical data:")
-    print(hospital_patients_numerical[:5])
-    print("Hospital patients categorical data:")
-    print(hospital_patients_categorical[:5])
-    print("Combined data for clustering:")
-    print(hospital_patients_combined[:5])
+    print ("Five")
 
     # Perform clustering if enough data is available
     if len(hospital_patients) >= 50:  # Ensure there are enough patients
-        kproto = KPrototypes(n_clusters=8, init='Cao', n_init=10, random_state=0)
-        
+        print ("Six")
+        kproto = KPrototypes(n_clusters=5, init='Cao', n_init=10, random_state=0)
+        print ("Seven)")
         clusters = kproto.fit_predict(hospital_patients_combined, categorical=list(range(len(numerical_cols), len(numerical_cols) + len(categorical_cols))))
         print("After Clustering -- ")
         print(f"Clusters = {clusters}")
@@ -133,10 +135,15 @@ def cluster_patients_by_hospital(hospital_name):
         print(f"Cluster assignment for {hospital_name}:")
         cluster_counts = hospital_patients['Cluster'].value_counts()
         print(cluster_counts)
-        
-        return hospital_patients
+        predicted_cluster = clusters[-1]  # Assuming you are interested in the cluster of the last added patient
+       
+        filtered_patients = hospital_patients[hospital_patients['Cluster'] == predicted_cluster]
+        print ("Predicted Cluster:")
+        print (predicted_cluster)
+        # Return and render the template with the filtered patient data
+        return render_template('results.html', cluster_data=filtered_patients.to_dict(orient='records'), cluster=predicted_cluster)                          
     else:
-        return pd.DataFrame()  # Return an empty DataFrame if not enough data
-
+        return "Not enough data to form clusters."
+    
 if __name__ == '__main__':
     app.run(debug=True)

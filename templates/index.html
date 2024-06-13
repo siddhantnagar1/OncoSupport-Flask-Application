@@ -53,16 +53,8 @@
     <div class="container">
         <h1>Support Group Intake Form</h1>
         <form action="/cluster" method="POST">
-            <label for="name">Name:</label>
+            <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="relationship">Relationship:</label>
-            <select id="relationship" name="relationship" required>
-                <option value="Patient">Patient</option>
-                <option value="Parent of a patient">Parent of a patient</option>
-                <option value="Caregiver">Caregiver</option>
-                <option value="Physician">Physician</option>
-            </select><br><br>
             
             <label for="gender">Gender:</label>
             <select id="gender" name="gender" required>
@@ -123,10 +115,44 @@
             
             <label for="personal_concern">Personal Concern:</label>
             <select id="personal_concern" name="personal_concern" required>
-                <option value="Financial">Financial</option>
-                <option value="Emotional">Emotional</option>
-                <option value="Lack of Knowledge">Lack of Knowledge</option>
+                <option value="Fear of recurrence">Fear of recurrence</option>
+                <option value="Pain management">Pain management</option>
+                <option value="Fatigue">Fatigue</option>
+                <option value="Emotional distress">Emotional distress</option>
+                <option value="Loss of independence">Loss of independence</option>
+                <option value="Anxiety about treatments">Anxiety about treatments</option>
+                <option value="Financial issues">Financial issues</option>
+                <option value="Body image issues">Body image issues</option>
+                <option value="Diet and nutrition concerns">Diet and nutrition concerns</option>
+                <option value="Impact on family">Impact on family</option>
+                <option value="Sleep disturbances">Sleep disturbances</option>
+                <option value="Sexual health">Sexual health</option>
+                <option value="Physical limitations">Physical limitations</option>
+                <option value="Communication with healthcare providers">Communication with healthcare providers</option>
+                <option value="Isolation">Isolation</option>
+                <option value="Mental health">Mental health</option>
+                <option value="Spiritual/existential issues">Spiritual/existential issues</option>
+                <option value="End-of-life planning">End-of-life planning</option>
+                <option value="Genetic concerns">Genetic concerns</option>
+                <option value="Treatment decisions">Treatment decisions</option>
+                <option value="Medication side effects">Medication side effects</option>
+                <option value="Survivorship">Survivorship</option>
+                <option value="Access to care">Access to care</option>
+                <option value="Change in cognitive abilities">Change in cognitive abilities</option>
+                <option value="Managing chronic conditions">Managing chronic conditions</option>
+                <option value="Immune system concerns">Immune system concerns</option>
+                <option value="Reintegration into society">Reintegration into society</option>
+                <option value="Personal growth">Personal growth</option>
+                <option value="Support system">Support system</option>
+                <option value="Coping strategies">Coping strategies</option>
             </select><br><br>
+
+            <label for="hospital">Primary Care Hospital:</label>
+            <select id="hospital" name="hospital" required>
+                <option value="UC Health">UC Health</option>
+                <option value="Massachusetts General Hospital">Massachusetts General Hospital</option>
+                <option value="Cleveland Clinic">Cleveland Clinic</option>
+            <select><br><br>
 
             <label for="phone_number">Phone Number:</label>
             <input type="text" id="phone_number" name="phone_number"><br><br>
