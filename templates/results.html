@@ -2,51 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cluster Results</title>
+    <title>Support Group Assignment</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Lora', serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #007bff;
+        }
+        .logout-button {
+            margin-top: 20px;
+        }
+        .table {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="my-4">Cluster Results</h1>
-
+        <div class="header">
+            <h1>Support Group Assignment</h1>
+        </div>
         {% if cluster_data %}
-            <h2>Predicted Cluster: {{ cluster }}</h2>
+            <h2>Welcome to Support Group {{ cluster }}</h2>
+            <h3>
+                {% if hospital == 'UC Health' %}
+                    {% if cluster == 1 %} Your CBT Supervisor is Andrew Smith
+                    {% elif cluster == 2 %} Your CBT Supervisor is David Garcia
+                    {% elif cluster == 3 %} Your CBT Supervisor is Alex Chen
+                    {% elif cluster == 4 %} Your CBT Supervisor is Elizabeth Lin
+                    {% elif cluster == 5 %} Your CBT Supervisor is Katie Wilson
+                    {% elif cluster == 6 %} Your CBT Supervisor is Ali Stewart
+                    {% elif cluster == 7 %} Your CBT Supervisor is Michael Thompson
+                    {% elif cluster == 8 %} Your CBT Supervisor is Ryan Millay
+                    {% endif %}
+                {% elif hospital == 'Cleveland Clinic' %}
+                    {% if cluster == 1 %} Your CBT Supervisor is Andrew Smith
+                    {% elif cluster == 2 %} Your CBT Supervisor is David Garcia
+                    {% elif cluster == 3 %} Your CBT Supervisor is Alex Chen
+                    {% elif cluster == 4 %} Your CBT Supervisor is Michael Thompson
+                    {% elif cluster == 5 %} Your CBT Supervisor is Elizabeth Lin
+                    {% elif cluster == 6 %} Your CBT Supervisor is atie Wilson
+                    {% elif cluster == 7 %} Your CBT Supervisor is Ali Stewart
+                    {% elif cluster == 8 %} Your CBT Supervisor is Ryan Millay
+                    {% endif %}
+                {% elif hospital == 'Massachusetts General Hospital' %}
+                    {% if cluster == 1 %} Your CBT Supervisor is Andrew Smith
+                    {% elif cluster == 2 %} Your CBT Supervisor is David Garcia
+                    {% elif cluster == 3 %} Your CBT Supervisor is Alex Chen
+                    {% elif cluster == 4 %} Your CBT Supervisor is Michael Thompson
+                    {% elif cluster == 5 %} Your CBT Supervisor is Elizabeth Lin
+                    {% elif cluster == 6 %} Your CBT Supervisor is Katie Wilson
+                    {% elif cluster == 7 %} Your CBT Supervisor is Ali Stewart
+                    {% elif cluster == 8 %} Your CBT Supervisor is Ryan Millay
+                    {% endif %}
+                {% endif %}
+            </h3>
+            <a href="/download" class="btn btn-primary mb-3">Please view support group rules and guidelines</a>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Full Name</th>
-                        <th>Gender</th>
-                        <th>Age</th>
-                        <th>Ethnicity</th>
-                        <th>Diagnosis by Location</th>
-                        <th>Cancer Diagnosis</th>
-                        <th>Cancer Stage</th>
-                        <th>Time with Cancer (months)</th>
-                        <th>Primary Speaking Language</th>
-                        <th>Parenting Situation</th>
-                        <th>Personal Concern</th>
-                        <th>Hospital</th>
-                        <th>Phone Number</th>
-                        <th>Email</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for patient in cluster_data %}
                         <tr>
                             <td>{{ patient['Full Name'] }}</td>
-                            <td>{{ patient['Gender'] }}</td>
-                            <td>{{ patient['Age'] }}</td>
-                            <td>{{ patient['Ethnicity'] }}</td>
-                            <td>{{ patient['Diagnosis by Location'] }}</td>
-                            <td>{{ patient['Cancer Diagnosis'] }}</td>
-                            <td>{{ patient['Cancer Stage'] }}</td>
-                            <td>{{ patient['Time with Cancer (months)'] }}</td>
-                            <td>{{ patient['Primary Speaking Language'] }}</td>
-                            <td>{{ patient['Parenting Situation'] }}</td>
-                            <td>{{ patient['Personal Concern'] }}</td>
-                            <td>{{ patient['Hospital'] }}</td>
-                            <td>{{ patient['Phone Number'] }}</td>
-                            <td>{{ patient['Email'] }}</td>
                         </tr>
                     {% endfor %}
                 </tbody>
@@ -54,6 +93,7 @@
         {% else %}
             <p>{{ message }}</p>
         {% endif %}
+        <a href="/logout" class="btn btn-danger logout-button">Logout</a>
     </div>
 </body>
 </html>

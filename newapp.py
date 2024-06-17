@@ -1,41 +1,49 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash, send_from_directory
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 import pandas as pd
 from kmodes.kprototypes import KPrototypes
 import joblib
 import os
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Replace with a real secret key
 
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///oncosupport.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://u8lhv7k55jpqkn:p63e09a9ae211b1e1050e982500120a7665d41d5cd5363bc0a1314fb092a1c3aa@c5flugvup2318r.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d7812gfl00q44o'
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(120), nullable=False)
+    form_submitted = db.Column(db.Boolean, default=False)
+    cluster = db.Column(db.Integer)
+    hospital = db.Column(db.String(120))
 
-
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
-
-
+class Patient(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    full_name = db.Column(db.String(120), nullable=False)
+    gender = db.Column(db.String(10), nullable=False)
+    age = db.Column(db.Integer, nullable=False)
+    ethnicity = db.Column(db.String(50), nullable=False)
+    diagnosis_by_location = db.Column(db.String(100), nullable=False)
+    cancer_diagnosis = db.Column(db.String(100), nullable=False)
+    cancer_stage = db.Column(db.Integer, nullable=False)
+    time_with_cancer = db.Column(db.Integer, nullable=False)
+    primary_language = db.Column(db.String(50), nullable=False)
+    parenting_situation = db.Column(db.String(50), nullable=False)
+    personal_concern = db.Column(db.String(100), nullable=False)
+    hospital = db.Column(db.String(120), nullable=False)
+    phone_number = db.Column(db.String(20))
+    email = db.Column(db.String(120))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    cluster = db.Column(db.Integer)
 
 # Load the initial patient data
 patients = pd.read_csv('oncosupport_dataset.csv')
-
-# Simplified user storage
-users = {}
-user_storage_file = 'users.csv'
-if not os.path.exists(user_storage_file):
-    with open(user_storage_file, 'w') as f:
-        f.write('username,password\n')
-
-def load_users():
-    global users
-    user_data = pd.read_csv(user_storage_file)
-    for index, row in user_data.iterrows():
-        users[row['username']] = row['password']
-
-def save_user(username, password):
-    with open(user_storage_file, 'a') as f:
-        f.write(f'{username},{password}\n')
-
-load_users()
 
 # Support Group Supervisors
 supervisors = {
@@ -84,11 +92,12 @@ def signup():
         if password != confirm_password:
             flash('Passwords do not match')
             return render_template('signup.html')
-        if username in users:
+        if User.query.filter_by(username=username).first():
             flash('Username already exists')
         else:
-            users[username] = password
-            save_user(username, password)
+            new_user = User(username=username, password=password)
+            db.session.add(new_user)
+            db.session.commit()
             session['user'] = username
             flash('Account created successfully')
             return redirect(url_for('login'))
@@ -99,14 +108,14 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        if username in users and users[username] == password:
+        user = User.query.filter_by(username=username, password=password).first()
+        if user:
             session['user'] = username
             # Check if user already filled out the form and has a cluster
-            user_data_file = f"user_data_{username}.pkl"
-            if os.path.exists(user_data_file):
-                with open(user_data_file, 'rb') as f:
-                    user_data = joblib.load(f)
-                    session.update(user_data)
+            if user.form_submitted:
+                session['cluster_data'] = Patient.query.filter_by(user_id=user.id, cluster=user.cluster).all()
+                session['cluster'] = user.cluster
+                session['hospital'] = user.hospital
                 return redirect(url_for('results'))
             return redirect(url_for('index'))
         flash('Invalid credentials')
@@ -129,45 +138,44 @@ def index():
         try:
             # Extract form data
             form_data = {
-                'Full Name': request.form['name'],
-                'Gender': request.form['gender'],
-                'Age': int(request.form['age']),
-                'Ethnicity': request.form['ethnicity'],
-                'Diagnosis by Location': request.form['diagnosis_by_location'],
-                'Cancer Diagnosis': request.form['cancer_diagnosis'],
-                'Cancer Stage': int(request.form['cancer_stage']),
-                'Time with Cancer (months)': int(request.form['time_with_cancer']),
-                'Primary Speaking Language': request.form['primary_language'],
-                'Parenting Situation': request.form['parenting_situation'],
-                'Personal Concern': request.form['personal_concern'],
-                'Hospital': request.form['hospital'],
-                'Phone Number': request.form['phone_number'],
-                'Email': request.form['email'],
-                'Username': session['user']
+                'full_name': request.form['name'],
+                'gender': request.form['gender'],
+                'age': int(request.form['age']),
+                'ethnicity': request.form['ethnicity'],
+                'diagnosis_by_location': request.form['diagnosis_by_location'],
+                'cancer_diagnosis': request.form['cancer_diagnosis'],
+                'cancer_stage': int(request.form['cancer_stage']),
+                'time_with_cancer': int(request.form['time_with_cancer']),
+                'primary_language': request.form['primary_language'],
+                'parenting_situation': request.form['parenting_situation'],
+                'personal_concern': request.form['personal_concern'],
+                'hospital': request.form['hospital'],
+                'phone_number': request.form['phone_number'],
+                'email': request.form['email'],
+                'user_id': User.query.filter_by(username=session['user']).first().id
             }
 
             global patients
             patients = pd.concat([patients, pd.DataFrame([form_data])], ignore_index=True)
             
             # Perform clustering
-            hospital_patients = patients[patients['Hospital'] == form_data['Hospital']]
+            hospital_patients = patients[patients['hospital'] == form_data['hospital']]
             categorical_cols = [
-                'Gender', 
-                'Ethnicity', 
-                'Diagnosis by Location', 
-                'Cancer Diagnosis', 
-                'Primary Speaking Language', 
-                'Parenting Situation', 
-                'Personal Concern'
+                'gender', 
+                'ethnicity', 
+                'diagnosis_by_location', 
+                'cancer_diagnosis', 
+                'primary_language', 
+                'parenting_situation', 
+                'personal_concern'
             ]
-            numerical_cols = ['Age', 
-                              'Cancer Stage', 
-                              'Time with Cancer (months)']
+            numerical_cols = ['age', 
+                              'cancer_stage', 
+                              'time_with_cancer']
 
             hospital_patients_combined = hospital_patients[numerical_cols + categorical_cols].values
             n_clusters = max(1, len(hospital_patients) // 15)  # Ensure at least one cluster
-            kproto = KPrototypes(n_clusters=n_clusters, init='Cao', n_init=10, random_state=123)
-            
+            kproto = KPrototypes(n_clusters=n_clusters, init='Cao', n_init=10, random_state=0)
             clusters = kproto.fit_predict(hospital_patients_combined, categorical=list(range(len(numerical_cols), len(numerical_cols) + len(categorical_cols))))
             hospital_patients['Cluster'] = clusters
 
@@ -182,17 +190,16 @@ def index():
             # Store results in session
             session['cluster_data'] = cluster_data
             session['cluster'] = new_patient_cluster
-            session['hospital'] = form_data['Hospital']
+            session['hospital'] = form_data['hospital']
             
-            # Save user data to a file
-            user_data = {
-                'cluster_data': cluster_data,
-                'cluster': new_patient_cluster,
-                'hospital': form_data['Hospital']
-            }
-            user_data_file = f"user_data_{session['user']}.pkl"
-            with open(user_data_file, 'wb') as f:
-                joblib.dump(user_data, f)
+            # Save form submission data to the database
+            new_patient = Patient(**form_data, cluster=new_patient_cluster)
+            db.session.add(new_patient)
+            user = User.query.filter_by(username=session['user']).first()
+            user.form_submitted = True
+            user.cluster = new_patient_cluster
+            user.hospital = form_data['hospital']
+            db.session.commit()
             
             return redirect(url_for('results'))
         except Exception as e:
